@@ -1,0 +1,29 @@
+html {
+	font-family: Verdana, Geneva, Arial, sans-serif;
+	font-size: 100%;
+}
+
+body {
+	font-size: 1rem;
+}
+
+body, .mainheader, .mylink {
+	margin: 0;
+	padding: 0;
+}
+
+.mainheader {
+	text-align: center;
+	font-size: 1.5rem;
+	padding: 0.5em 0;
+}
+
+.block {
+	font-size: 1rem;
+	padding: 1em;
+}
+
+.mylink {
+	text-decoration: none;
+}
+
