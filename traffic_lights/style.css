@@ -1,0 +1,80 @@
+
+body {
+	background-image: url("01.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;	
+	margin: 0;
+	padding: 0;
+}
+
+.traffic_lights {
+	height: 100vh;
+	display: flex;
+	justify-content: center;	
+	align-items: center;
+	background-color: rgba(200, 200, 200, .2);
+}
+
+.case {
+  width: 30vmin;
+	height: 70vmin;
+	background-color: #444;
+	border: 2px solid #333;
+	border-radius: 15%;
+	cursor: pointer;
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+.color {
+	width:  20vmin; 
+	height: 20vmin; 
+	margin: auto;
+	border-radius: 20vmin;
+	background-color: blue;
+	animation-duration: 6s;
+	animation-iteration-count: 3; 
+	animation-timing-function: ease-in-out; 
+}
+
+#red {
+	background-color: red;	
+	animation-name: changeRed;
+}
+
+@keyframes changeRed {
+	0%, 20% { 
+		background-color: red;
+	}
+	40%, 100% { 
+		background-color: #777; 
+	}
+}
+
+#yellow {
+	background-color: #777;	
+	animation-name: changeYellow;
+}
+
+@keyframes changeYellow {
+	0%, 20%   { background-color: #777; }
+	40%, 60%  { background-color: yellow; }
+	80%, 100% { background-color: #777; }
+}
+
+#green {
+	background-color: #777;	
+	animation-name: changeGreen;
+}
+
+@keyframes changeGreen {
+	0%, 60%  { 
+		background-color: #777; 
+	}
+	80%, 100% { 
+		background-color: #3f3; 
+	}
+}
+
